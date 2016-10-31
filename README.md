@@ -14,7 +14,7 @@ activate the venv and check it:
     florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ source venv/bin/activate
     (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ pip freeze
     (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ python --version
-Python 3.4.3
+    Python 3.4.3
 
 install sphinx:
 
