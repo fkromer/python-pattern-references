@@ -11,7 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-
+   design_patterns
+   bibliography
 
 Indices and tables
 ==================
