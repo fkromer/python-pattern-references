@@ -69,4 +69,15 @@ setup the documentation sources with the following options:
     
     Finished: An initial directory structure has been created.
 
+install the sphinx-doc theme "read the docs" and update the requirements:
 
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ pip install sphinx_rtd_theme
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ pip freeze > venv/requirements.txt
+
+adjust the configure to the new theme in conf.py ("html_theme =")
+
+generate the html files:
+
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ make html
+
+add content...

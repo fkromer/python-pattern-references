@@ -9,3 +9,4 @@ imagesize==0.7.1
 pytz==2016.7
 six==1.10.0
 snowballstemmer==1.2.1
+sphinx-rtd-theme==0.1.9
