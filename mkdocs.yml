@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: Python Pattern References
+repo_url: https://github.com/python-pattern-language/python-pattern-references
+edit_uri: edit/master/docs/
+pages:
+    - Home: index.md
+    - 'Design Patterns': design.md
