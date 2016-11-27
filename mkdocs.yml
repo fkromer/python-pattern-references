@@ -4,3 +4,4 @@ edit_uri: edit/master/docs/
 pages:
     - Home: index.md
     - 'Design Patterns': design.md
+    - Bibliography: bibliography.md
