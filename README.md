@@ -18,7 +18,7 @@ activate the venv and check it:
 
 install mkdocs:
 
-    pip install mkdocs
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ pip install mkdocs
 
 save the venv dependencies into a requirement file:
 
@@ -30,6 +30,13 @@ host the website on locally:
 
 add content... (local server shows updated version on-the-fly)
 
-maintenance team only: deploy to gh-pages
+add and commit chagnes to master branch:
+
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ git add ...
+    (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ git commit ...
+
+deploy to gh-pages branch:
 
     (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ mkdocs deploy gh-pages
+
+visit [Python Pattern References Website](https://python-pattern-language.github.io/python-pattern-references/) hosted with GitHub Pages
