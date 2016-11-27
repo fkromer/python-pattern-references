@@ -105,141 +105,143 @@
 
 <h1 id="abstract-factory">Abstract Factory</h1>
 <p>Creates families of related objects without depending on their specific classes.</p>
-<p>:Implementaion example:
- App which lets the user decide weather connect to a website over http,
- https or ftp to list the directories of the corresponding web server (Zlobin
- 2013, chapter "The Factory Method Implementation").</p>
-<p>:Implementaion example:
- Creation of a game dependent on the user age for childs ("frog world")
- or adults ("wizard world"). (Kasampalis 2015, chapter "1. The Factory Pattern",
- subchapter "Abstract Method", subsubchapter "Implementation").</p>
+<p><strong>Implementaion example</strong></p>
+<p>App which lets the user decide weather connect to a website over http,
+https or ftp to list the directories of the corresponding web server (Zlobin
+2013, chapter "The Factory Method Implementation").</p>
+<p><strong>Implementaion example</strong></p>
+<p>Creation of a game dependent on the user age for childs ("frog world")
+or adults ("wizard world"). (Kasampalis 2015, chapter "1. The Factory Pattern",
+subchapter "Abstract Method", subsubchapter "Implementation").</p>
 <h1 id="adapter">Adapter</h1>
 <p>Makes two incompatible interfaces compatible.</p>
-<p>:Implementation example:
- Abstract but running example of the Adapter Pattern implemented with
- the internal dictionary of a class instead of the traditional implementation
- based on inheritance (Kasampalis 2015, chapter "4. The Adapter pattern",
- subchapter "Implementation").</p>
-<p>:Implementation example:
- Existing class does calculate a persons age dependent on the birthday
- date as string input. Adapter class uses the existing class but provides an
- interface which expects the birthday date in the datetime format (Phillips 2010,
- section "Adapter pattern" / p. 257).</p>
+<p><strong>Implementation example</strong></p>
+<p>Abstract but running example of the Adapter Pattern implemented with
+the internal dictionary of a class instead of the traditional implementation
+based on inheritance (Kasampalis 2015, chapter "4. The Adapter pattern",
+subchapter "Implementation").</p>
+<p><strong>Implementation example</strong></p>
+<p>Existing class does calculate a persons age dependent on the birthday
+date as string input. Adapter class uses the existing class but provides an
+interface which expects the birthday date in the datetime format (Phillips 2010,
+section "Adapter pattern" / p. 257).</p>
 <h1 id="builder">Builder</h1>
 <p>Composition of a complex object consisting of different parts step by step.</p>
-<p>:Implementation example:
- The configuration of imaginary computers with different configurations
- points out the differences between the Builder Pattern and the Factory Pattern
- (Kasampalis 2015, chapter "2. The Builder Pattern", subchapter "Uses cases").</p>
-<p>:Implementaion example:
- Preparing imaginary pizzas with different ingredients but whose
- preparation follow a common procedure (Kasampalis 2015, chapter "2. The Build
- Pattern", subchapter "Implementation").</p>
+<p><strong>Implementation example</strong></p>
+<p>The configuration of imaginary computers with different configurations
+points out the differences between the Builder Pattern and the Factory Pattern
+(Kasampalis 2015, chapter "2. The Builder Pattern", subchapter "Uses cases").</p>
+<p><strong>Implementaion example</strong></p>
+<p>Preparing imaginary pizzas with different ingredients but whose
+preparation follow a common procedure (Kasampalis 2015, chapter "2. The Build
+Pattern", subchapter "Implementation").</p>
 <h1 id="container">Container</h1>
 <p>Abstracts away data structuring from application domain classes.</p>
-<p>:Implementation example:
- The standard library of Python 3 provides many built-in containers
- (dict, list, set, tuple) and specialized container datatypes (namedtuple, deque,
- ChainMap, Counter, OrderedDict, defaultDict, UserDict, UserList, UserString)
- in the module <em>collections</em>.</p>
+<p><strong>Implementation example</strong></p>
+<p>The standard library of Python 3 provides many built-in containers
+(dict, list, set, tuple) and specialized container datatypes (namedtuple, deque,
+ChainMap, Counter, OrderedDict, defaultDict, UserDict, UserList, UserString)
+in the module <em>collections</em>.</p>
 <h1 id="facade">Facade</h1>
-<p>:Implementaion example:
- Access layer to a SQLite database for blog and related post objects
- (Lott 2014, chapter "Designing an access layer for SQLite").</p>
+<p><strong>Implementaion example</strong></p>
+<p>Access layer to a SQLite database for blog and related post objects
+(Lott 2014, chapter "Designing an access layer for SQLite").</p>
 <h1 id="factory-method">Factory Method</h1>
 <p>Defines an interface for creating an instance of an object but lets the class
 which implements the interface decide which class to instantiate.</p>
-<p>:Implementaion example:
- App which lets the user decide weather connect to a website over http
- or ftp to list the directories of the corresponding web server (Zlobin 2013,
- chapter "The Factory Method Implementation").</p>
-<p>:Implementaion example:
- Creation of objects for handling the input data in XML format or in
- JSON format and parsing it correspondingly. (Kasampalis 2015, chapter "1. The
- Factory Pattern", subchapter "Factory Method", subsubchapter "Implementation").</p>
+<p><strong>Implementaion example</strong></p>
+<p>App which lets the user decide weather connect to a website over http
+or ftp to list the directories of the corresponding web server (Zlobin 2013,
+chapter "The Factory Method Implementation").</p>
+<p><strong>Implementaion example</strong></p>
+<p>Creation of objects for handling the input data in XML format or in
+JSON format and parsing it correspondingly. (Kasampalis 2015, chapter "1. The
+Factory Pattern", subchapter "Factory Method", subsubchapter "Implementation").</p>
 <h1 id="model-view-controller">Model View Controller</h1>
 <p>Separates the application (or part of it) into the parts model (data and logic),
 view (HMI) and controller (links the model and the view).</p>
-<p>:Implementation example:
- Web interface URL-shortening service implemented with the framework
- flask which does not support the MVC pattern out-of-the-box (Zlobin 2013, 
- section "1. Model-View-Controller", subchapter "Implementation in Python").</p>
-<p>:Implemetation example:
- The chess game objects chessboard and pieces (model) are linked to the
- graphical representation (view) over mouse events (controller) (Chaudhary 2013,
- section "Project 4: Game of Chess"). (The separation into model, view and
- controller is not that obvious because the view and the model are placed into a
- single python file "gui.py".)</p>
+<p><strong>Implementation example</strong></p>
+<p>Web interface URL-shortening service implemented with the framework
+flask which does not support the MVC pattern out-of-the-box (Zlobin 2013, 
+section "1. Model-View-Controller", subchapter "Implementation in Python").</p>
+<p><strong>Implemetation example</strong></p>
+<p>The chess game objects chessboard and pieces (model) are linked to the
+graphical representation (view) over mouse events (controller) (Chaudhary 2013,
+section "Project 4: Game of Chess"). (The separation into model, view and
+controller is not that obvious because the view and the model are placed into a
+single python file "gui.py".)</p>
 <h1 id="observer">Observer</h1>
 <p>Notification of clients about the status of a data server.</p>
-<p>:Implementation example:
- The system time (subject) notifies its observers (12 hour formatter,
- 24 hour formatter) about a change which convert and print the time accordingly
- (Zlobin 2013, chapter "Observer design pattern", subsection "Implementation in
- Python" / Kindle pos. 924).</p>
-<p>:Implementation example:
- The value (subject) notifies its observers (hex formatter, binary
- formatter) about a change which convert an print the value accoringly
- (Kasampalis 2015, section "Chapter 13. The Observer Pattern", subsection
- "Implementation" / Kindle pos. 2416).</p>
+<p><strong>Implementation example</strong></p>
+<p>The system time (subject) notifies its observers (12 hour formatter,
+24 hour formatter) about a change which convert and print the time accordingly
+(Zlobin 2013, chapter "Observer design pattern", subsection "Implementation in
+Python" / Kindle pos. 924).</p>
+<p><strong>Implementation example</strong></p>
+<p>The value (subject) notifies its observers (hex formatter, binary
+formatter) about a change which convert an print the value accoringly
+(Kasampalis 2015, section "Chapter 13. The Observer Pattern", subsection
+"Implementation" / Kindle pos. 2416).</p>
 <h1 id="prototype">Prototype</h1>
 <p>Creation of an exact copy of an object.</p>
-<p>:Implementation example:
- Creation of information about the second version of a book based on
- the first version information by using pythons deepcopy functionality
- copy.deepcopy() (Kasampalis 2015, chapter "3. The Prototype Pattern").</p>
+<p><strong>Implementation example</strong></p>
+<p>Creation of information about the second version of a book based on
+the first version information by using pythons deepcopy functionality
+copy.deepcopy() (Kasampalis 2015, chapter "3. The Prototype Pattern").</p>
 <h1 id="singleton">Singleton</h1>
 <p>Ensures that only one instance of a class may be created.</p>
-<p>:Implementation example:
- <strong>new</strong> class method ensures that only one instance of the class is
- created (using call "super") and returns the same single instance if "one is
- created" afterwards (Philipps 2010, section "Singleton implementation").</p>
-<p>:Implementation example:
- A state based parser instantiates a class and assigns it immediatelly
- afterwards to a module variable (Phillips 2010, section "Module variables can
- mimic singletons").</p>
-<p>:Implementation example:
- Basic "class" singleton (Zlobin 2013, section "A classic singleton").</p>
-<p>:Implementation example:
- Webcrawler which scans for website-local hyperlinks, follows the links
- and downloads the pictures on it (Zlobin 2013, section "Chapter 2. Creating
- Only One Object with teh Singleton Pattern", subsection "Implementation in
- Python" / Kindle pos. 417)</p>
+<p><strong>Implementation example</strong></p>
+<p>__new__ class method ensures that only one instance of the class is
+created (using call "super") and returns the same single instance if "one is
+created" afterwards (Philipps 2010, section "Singleton implementation").</p>
+<p><strong>Implementation example</strong></p>
+<p>A state based parser instantiates a class and assigns it immediatelly
+afterwards to a module variable (Phillips 2010, section "Module variables can
+mimic singletons").</p>
+<p><strong>Implementation example</strong></p>
+<p>Basic "class" singleton (Zlobin 2013, section "A classic singleton").</p>
+<p><strong>Implementation example</strong></p>
+<p>Webcrawler which scans for website-local hyperlinks, follows the links
+and downloads the pictures on it (Zlobin 2013, section "Chapter 2. Creating
+Only One Object with teh Singleton Pattern", subsection "Implementation in
+Python" / Kindle pos. 417)</p>
 <h2 id="implicitly-instantiated-module-singleton">Implicitly Instantiated Module Singleton</h2>
 <p>Pythonic variant/implementation of the singleton where an object is instantiated
 immediately (after module import).</p>
-<p>:Implementation example:
- A state based parser instantiates a class and
- assigns it immediatelly afterwards to a module variable (Phillips 2010, section
- "Module variables can mimic singletons").</p>
-<p>:Implementation example:
- Pythonic "modul instead of class" singleton
- (Zlobin 2013, section "A module-level singleton").</p>
-<p>:Implementation example:
- Database object is instantiated as module local object (Phillips, p. 47).</p>
+<p><strong>Implementation example</strong></p>
+<p>A state based parser instantiates a class and
+assigns it immediatelly afterwards to a module variable (Phillips 2010, section
+"Module variables can mimic singletons").</p>
+<p><strong>Implementation example</strong></p>
+<p>Pythonic "modul instead of class" singleton
+(Zlobin 2013, section "A module-level singleton").</p>
+<p><strong>Implementation example</strong></p>
+<p>Database object is instantiated as module local object (Phillips, p. 47).</p>
 <h2 id="explicitly-instantiated-module-singleton">Explicitly Instantiated Module Singleton</h2>
 <p>Pythonic variant/implementation of the singleton where the object is instantiated
 explicitly.</p>
-<p>:Problem:
- - in Python objects are created immediatelly after modules are imported
- - if performance is critical or the object data not available yet a delayed
-   instantiation may be required</p>
-<p>:Implementation example:
- Database object may be instantiated as module local object per
- function call (Phillips, p. 47). (Phillips, p. 48).</p>
+<p><strong>Problem</strong></p>
+<ul>
+<li>in Python objects are created immediatelly after modules are imported</li>
+<li>if performance is critical or the object data not available yet a delayed
+   instantiation may be required</li>
+</ul>
+<p><strong>Implementation example</strong></p>
+<p>Database object may be instantiated as module local object per
+function call (Phillips, p. 47). (Phillips, p. 48).</p>
 <h2 id="borg-singleton">Borg singleton</h2>
 <p>Uses a shared state to ensure that successors of a singleton class are also
 singletons.</p>
-<p>:Implementation example:
- Borg singleton implements a shared resource (to store images) and a
- set of URLs  which are accessed by 2 threads which fetch images of the URLs and
- stores them (Zlobin 2013, chapter "2. Creating Only One Object with the
- Singleton Pattern", subchapter "Implementation in Python").</p>
+<p><strong>Implementation example</strong></p>
+<p>Borg singleton implements a shared resource (to store images) and a
+set of URLs  which are accessed by 2 threads which fetch images of the URLs and
+stores them (Zlobin 2013, chapter "2. Creating Only One Object with the
+Singleton Pattern", subchapter "Implementation in Python").</p>
 <h1 id="state">State</h1>
-<p>:Implementation example:
- Emulation of basic operation system process states and transitions
- using the module "state_machine" (Kasampalis 2015, chapter "Chapter 14. The
- State Pattern", subchapter "Implementation").</p></div>
+<p><strong>Implementation example</strong></p>
+<p>Emulation of basic operation system process states and transitions
+using the module "state_machine" (Kasampalis 2015, chapter "Chapter 14. The
+State Pattern", subchapter "Implementation").</p></div>
         </div>
 
         <footer class="col-md-12">
