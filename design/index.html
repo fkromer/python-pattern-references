@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Design Patterns - Python Pattern References</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Python Pattern References</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Design Patterns</a>
+                    </li>
+                    <li >
+                        <a href="../bibliography/">Bibliography</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../bibliography/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/python-pattern-language/python-pattern-references">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#abstract-factory">Abstract Factory</a></li>
+        <li class="main "><a href="#adapter">Adapter</a></li>
+        <li class="main "><a href="#builder">Builder</a></li>
+        <li class="main "><a href="#container">Container</a></li>
+        <li class="main "><a href="#facade">Facade</a></li>
+        <li class="main "><a href="#factory-method">Factory Method</a></li>
+        <li class="main "><a href="#model-view-controller">Model View Controller</a></li>
+        <li class="main "><a href="#observer">Observer</a></li>
+        <li class="main "><a href="#prototype">Prototype</a></li>
+        <li class="main "><a href="#singleton">Singleton</a></li>
+            <li><a href="#implicitly-instantiated-module-singleton">Implicitly Instantiated Module Singleton</a></li>
+            <li><a href="#explicitly-instantiated-module-singleton">Explicitly Instantiated Module Singleton</a></li>
+            <li><a href="#borg-singleton">Borg singleton</a></li>
+        <li class="main "><a href="#state">State</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="abstract-factory">Abstract Factory</h1>
+<p>Creates families of related objects without depending on their specific classes.</p>
+<p>:Implementaion example:
+ App which lets the user decide weather connect to a website over http,
+ https or ftp to list the directories of the corresponding web server (Zlobin
+ 2013, chapter "The Factory Method Implementation").</p>
+<p>:Implementaion example:
+ Creation of a game dependent on the user age for childs ("frog world")
+ or adults ("wizard world"). (Kasampalis 2015, chapter "1. The Factory Pattern",
+ subchapter "Abstract Method", subsubchapter "Implementation").</p>
+<h1 id="adapter">Adapter</h1>
+<p>Makes two incompatible interfaces compatible.</p>
+<p>:Implementation example:
+ Abstract but running example of the Adapter Pattern implemented with
+ the internal dictionary of a class instead of the traditional implementation
+ based on inheritance (Kasampalis 2015, chapter "4. The Adapter pattern",
+ subchapter "Implementation").</p>
+<p>:Implementation example:
+ Existing class does calculate a persons age dependent on the birthday
+ date as string input. Adapter class uses the existing class but provides an
+ interface which expects the birthday date in the datetime format (Phillips 2010,
+ section "Adapter pattern" / p. 257).</p>
+<h1 id="builder">Builder</h1>
+<p>Composition of a complex object consisting of different parts step by step.</p>
+<p>:Implementation example:
+ The configuration of imaginary computers with different configurations
+ points out the differences between the Builder Pattern and the Factory Pattern
+ (Kasampalis 2015, chapter "2. The Builder Pattern", subchapter "Uses cases").</p>
+<p>:Implementaion example:
+ Preparing imaginary pizzas with different ingredients but whose
+ preparation follow a common procedure (Kasampalis 2015, chapter "2. The Build
+ Pattern", subchapter "Implementation").</p>
+<h1 id="container">Container</h1>
+<p>Abstracts away data structuring from application domain classes.</p>
+<p>:Implementation example:
+ The standard library of Python 3 provides many built-in containers
+ (dict, list, set, tuple) and specialized container datatypes (namedtuple, deque,
+ ChainMap, Counter, OrderedDict, defaultDict, UserDict, UserList, UserString)
+ in the module <em>collections</em>.</p>
+<h1 id="facade">Facade</h1>
+<p>:Implementaion example:
+ Access layer to a SQLite database for blog and related post objects
+ (Lott 2014, chapter "Designing an access layer for SQLite").</p>
+<h1 id="factory-method">Factory Method</h1>
+<p>Defines an interface for creating an instance of an object but lets the class
+which implements the interface decide which class to instantiate.</p>
+<p>:Implementaion example:
+ App which lets the user decide weather connect to a website over http
+ or ftp to list the directories of the corresponding web server (Zlobin 2013,
+ chapter "The Factory Method Implementation").</p>
+<p>:Implementaion example:
+ Creation of objects for handling the input data in XML format or in
+ JSON format and parsing it correspondingly. (Kasampalis 2015, chapter "1. The
+ Factory Pattern", subchapter "Factory Method", subsubchapter "Implementation").</p>
+<h1 id="model-view-controller">Model View Controller</h1>
+<p>Separates the application (or part of it) into the parts model (data and logic),
+view (HMI) and controller (links the model and the view).</p>
+<p>:Implementation example:
+ Web interface URL-shortening service implemented with the framework
+ flask which does not support the MVC pattern out-of-the-box (Zlobin 2013, 
+ section "1. Model-View-Controller", subchapter "Implementation in Python").</p>
+<p>:Implemetation example:
+ The chess game objects chessboard and pieces (model) are linked to the
+ graphical representation (view) over mouse events (controller) (Chaudhary 2013,
+ section "Project 4: Game of Chess"). (The separation into model, view and
+ controller is not that obvious because the view and the model are placed into a
+ single python file "gui.py".)</p>
+<h1 id="observer">Observer</h1>
+<p>Notification of clients about the status of a data server.</p>
+<p>:Implementation example:
+ The system time (subject) notifies its observers (12 hour formatter,
+ 24 hour formatter) about a change which convert and print the time accordingly
+ (Zlobin 2013, chapter "Observer design pattern", subsection "Implementation in
+ Python" / Kindle pos. 924).</p>
+<p>:Implementation example:
+ The value (subject) notifies its observers (hex formatter, binary
+ formatter) about a change which convert an print the value accoringly
+ (Kasampalis 2015, section "Chapter 13. The Observer Pattern", subsection
+ "Implementation" / Kindle pos. 2416).</p>
+<h1 id="prototype">Prototype</h1>
+<p>Creation of an exact copy of an object.</p>
+<p>:Implementation example:
+ Creation of information about the second version of a book based on
+ the first version information by using pythons deepcopy functionality
+ copy.deepcopy() (Kasampalis 2015, chapter "3. The Prototype Pattern").</p>
+<h1 id="singleton">Singleton</h1>
+<p>Ensures that only one instance of a class may be created.</p>
+<p>:Implementation example:
+ <strong>new</strong> class method ensures that only one instance of the class is
+ created (using call "super") and returns the same single instance if "one is
+ created" afterwards (Philipps 2010, section "Singleton implementation").</p>
+<p>:Implementation example:
+ A state based parser instantiates a class and assigns it immediatelly
+ afterwards to a module variable (Phillips 2010, section "Module variables can
+ mimic singletons").</p>
+<p>:Implementation example:
+ Basic "class" singleton (Zlobin 2013, section "A classic singleton").</p>
+<p>:Implementation example:
+ Webcrawler which scans for website-local hyperlinks, follows the links
+ and downloads the pictures on it (Zlobin 2013, section "Chapter 2. Creating
+ Only One Object with teh Singleton Pattern", subsection "Implementation in
+ Python" / Kindle pos. 417)</p>
+<h2 id="implicitly-instantiated-module-singleton">Implicitly Instantiated Module Singleton</h2>
+<p>Pythonic variant/implementation of the singleton where an object is instantiated
+immediately (after module import).</p>
+<p>:Implementation example:
+ A state based parser instantiates a class and
+ assigns it immediatelly afterwards to a module variable (Phillips 2010, section
+ "Module variables can mimic singletons").</p>
+<p>:Implementation example:
+ Pythonic "modul instead of class" singleton
+ (Zlobin 2013, section "A module-level singleton").</p>
+<p>:Implementation example:
+ Database object is instantiated as module local object (Phillips, p. 47).</p>
+<h2 id="explicitly-instantiated-module-singleton">Explicitly Instantiated Module Singleton</h2>
+<p>Pythonic variant/implementation of the singleton where the object is instantiated
+explicitly.</p>
+<p>:Problem:
+ - in Python objects are created immediatelly after modules are imported
+ - if performance is critical or the object data not available yet a delayed
+   instantiation may be required</p>
+<p>:Implementation example:
+ Database object may be instantiated as module local object per
+ function call (Phillips, p. 47). (Phillips, p. 48).</p>
+<h2 id="borg-singleton">Borg singleton</h2>
+<p>Uses a shared state to ensure that successors of a singleton class are also
+singletons.</p>
+<p>:Implementation example:
+ Borg singleton implements a shared resource (to store images) and a
+ set of URLs  which are accessed by 2 threads which fetch images of the URLs and
+ stores them (Zlobin 2013, chapter "2. Creating Only One Object with the
+ Singleton Pattern", subchapter "Implementation in Python").</p>
+<h1 id="state">State</h1>
+<p>:Implementation example:
+ Emulation of basic operation system process states and transitions
+ using the module "state_machine" (Kasampalis 2015, chapter "Chapter 14. The
+ State Pattern", subchapter "Implementation").</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
