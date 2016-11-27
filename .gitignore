@@ -3,3 +3,5 @@ _build
 # dir for virtual environment files (only requirements.txt required)
 venv/*
 !requirements.txt
+# mkdocs build directory
+site
