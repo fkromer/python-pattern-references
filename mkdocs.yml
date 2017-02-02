@@ -1,5 +1,5 @@
 site_name: Python Pattern References
-repo_url: https://github.com/python-pattern-language/python-pattern-references
+repo_url: https://github.com/fkromer/python-pattern-references
 edit_uri: edit/master/docs/
 pages:
     - Home: index.md
