@@ -39,4 +39,4 @@ deploy to gh-pages branch:
 
     (venv)florian@florian-desktop ~/ws_github/python-pattern-language/python-pattern-references $ mkdocs deploy gh-pages
 
-visit [Python Pattern References Website](https://python-pattern-language.github.io/python-pattern-references/) hosted with GitHub Pages
+visit [Python Pattern References Website](https://fkromer.github.io/python-pattern-references/) hosted with GitHub Pages
